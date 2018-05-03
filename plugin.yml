@@ -1,0 +1,10 @@
+name: change-directory
+description: Changes the working directory before running command
+author: https://github.com/reidab
+requirements: []
+configuration:
+  properties:
+    cd:
+      type: string
+  required:
+    - cd
