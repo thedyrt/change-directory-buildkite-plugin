@@ -5,5 +5,5 @@ set -euo pipefail
 if [[ -n ${BUILDKITE_PLUGIN_CHANGE_DIRECTORY_CD+x} ]]
 then
   echo "--- Changing working directory to $BUILDKITE_PLUGIN_CHANGE_DIRECTORY_CD"
-  cd $BUILDKITE_PLUGIN_CHANGE_DIRECTORY_CD
+  cd "$BUILDKITE_PLUGIN_CHANGE_DIRECTORY_CD"
 fi
