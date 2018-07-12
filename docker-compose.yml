@@ -6,6 +6,6 @@ services:
       - ".:/plugin:ro"
   lint:
     image: buildkite/plugin-linter
-    command: ['--name', 'thedyrt/change-directory']
+    command: ['--id', 'thedyrt/change-directory']
     volumes:
       - ".:/plugin:ro"
