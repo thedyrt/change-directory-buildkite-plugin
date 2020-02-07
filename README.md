@@ -10,10 +10,10 @@ Particularly useful for setting the working directory before invoking another Bu
 steps:
   - command: make
     plugins:
-      thedyrt/change-directory#v0.1.1:
-        cd: /mnt/data
-      docker-compose#v2.1.0:
-        run: app
+      - thedyrt/change-directory#v0.1.1:
+          cd: /mnt/data
+      - docker-compose#v2.1.0:
+          run: app
 ```
 
 ## Tests
